@@ -110,7 +110,7 @@ public class ATMCaseService {
                 cases.add(atmCase);
             }
         } catch (Exception e) {
-            throw new IllegalArgumentException("Unable to read data from file");
+            throw new IllegalArgumentException("Ошибка чтения файла", e);
         }
         return cases;
     }
